@@ -6,7 +6,7 @@ export const tasks = [
 
 export function getPendingTasks() {
     return tasks.filter(task => {
-        if (task.completed) {
+        if (!task.completed) {
             return true;
         }
     });
